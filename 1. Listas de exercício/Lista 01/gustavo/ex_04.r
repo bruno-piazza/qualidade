@@ -16,3 +16,4 @@ print(H2_inc)
 
 H2_inc_min <- min(H2_inc)
 print(H2_inc_min)
+print(H2_inc[H2_inc == H2_inc_min])

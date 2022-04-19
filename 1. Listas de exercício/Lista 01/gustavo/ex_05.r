@@ -35,5 +35,5 @@ print(ans_h)
 ans_i <- y[x] #não há elementos referentes aos indexes 7 e 9 (out of range)
 print(ans_i)
 
-ans_j <- y[y > -7]
+ans_j <- y[y > -7] #não exclui nenhum elemento
 print(ans_j)
