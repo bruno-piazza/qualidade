@@ -36,6 +36,8 @@ time_younger <- na.omit(nym_v1)$time[na.omit(nym_v1)$age == min(na.omit(nym_v1)$
 print(time_older)
 print(time_younger)
 
-uniqv <- unique(nym_v1$home)
-city <- uniqv[which.max(tabulate(match(nym_v1$home, uniqv)))]
-print(city)
+qe <- nym_v1$home
+print(qe)
+# uniqv <- unique(nym_v1$home)
+# city <- uniqv[which.max(tabulate(match(nym_v1$home, uniqv)))]
+# print(city)
