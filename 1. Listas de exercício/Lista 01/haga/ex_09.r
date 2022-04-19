@@ -7,16 +7,19 @@ nym <- data.frame(nym.2002)
 n_data <- NCOL(nym) * NROW(nym)
 print(n_data)
 print(names(nym))
-last_time_2 <- nym$time[na.omit(nym)$place == max(na.omit(nym)$place)]
-print(last_time_2)
-first_time_2 <- nym$time[na.omit(nym)$place == min(na.omit(nym)$place)]
-print(first_time_2)
+last_time <- nym$time[na.omit(nym)$place == max(na.omit(nym)$place)]
+print(last_time)
+first_time <- nym$time[na.omit(nym)$place == min(na.omit(nym)$place)]
+print(first_time)
 # last_time <- max(na.omit(nym)$time)
 # print(last_time)
 # last_time <- na.omit(nym)$time[na.omit(nym)$place[na.omit(nym)$place == max(na.omit(nym)$place)]] #nolint
 # print(last_time)
 
 nym_v1 <- nym[order(na.omit(nym)$place), ]
+print(nym_v1)
+time_100 <- nym_v1$time[100]
+print(time_100)
 
 n_male <- sum(na.omit(nym_v1)$gender == "Male")
 n_female <- sum(na.omit(nym_v1)$gender == "Female")
