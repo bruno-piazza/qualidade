@@ -3,16 +3,6 @@ library(moments)
 rm(list = ls())
 my_data <- read_xlsx("C:\\Users\\Gabriel\\OneDrive - usp.br\\Área de Trabalho\\7°Semestre\\IntroQualidade\\Dados dos alunos_1.xlsx", sheet = "Turma 03A") #nolint
 
-class(my_data)
-str(my_data)
-head(my_data)
-names(my_data)
-# my_data <- read_xls()("C:\\Users\\Gabriel\\OneDrive - usp.br\\Área de Trabalho\\7°Semestre\\IntroQualidade\\Dados dos alunos.csv", header=TRUE) #nolint
-# my_data <- na.omit(my_data)
-
-# print(my_data)
-# print(is.na(my_data))
-#my_data_1 <- data.frame(my_data$Idade, my_data$Altura, my_data$Peso)
 max_idade <- max(na.omit(my_data)$Idade)
 min_idade <- min(na.omit(my_data)$Idade)
 max_altura <- max(na.omit(my_data)$Altura)
