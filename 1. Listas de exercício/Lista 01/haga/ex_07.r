@@ -1,7 +1,8 @@
 library(readxl)
 library(moments)
 rm(list = ls())
-my_data <- read_xlsx("C:\\Users\\Gabriel\\OneDrive - usp.br\\Área de Trabalho\\7°Semestre\\IntroQualidade\\Dados dos alunos_1.xlsx", sheet = "Turma 03A") #nolint
+my_data <- read_xlsx("Dados dos alunos_1.xlsx", sheet = "Turma 03A") #nolint
+print(my_data)
 
 max_idade <- max(na.omit(my_data)$Idade)
 min_idade <- min(na.omit(my_data)$Idade)
